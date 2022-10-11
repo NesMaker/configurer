@@ -4,24 +4,24 @@ configure:
 	@echo Getting nes template
 	@mkdir src/lib -p
 	@mkdir tools
-	@wget https://cdn.nesmaker.repl.co/cdn/Makefile
-	@wget https://cdn.nesmaker.repl.co/cdn/nes.cfg
-	@wget https://cdn.nesmaker.repl.co/cdn/nes.lib
-	@wget https://cdn.nesmaker.repl.co/cdn/src/main.asm
-	@wget https://cdn.nesmaker.repl.co/cdn/src/lib/apu.inc
-	@wget https://cdn.nesmaker.repl.co/cdn/src/lib/ppu.inc
-	@wget https://cdn.nesmaker.repl.co/cdn/src/lib/neschar.asm
-	@wget https://cdn.nesmaker.repl.co/cdn/src/lib/neshdr.asm
+	@wget https://cdn.nesmaker.repl.co/cdn/Makefile -q
+	@wget https://cdn.nesmaker.repl.co/cdn/nes.cfg -q
+	@wget https://cdn.nesmaker.repl.co/cdn/nes.lib -q
+	@wget https://cdn.nesmaker.repl.co/cdn/src/main.asm -q
+	@wget https://cdn.nesmaker.repl.co/cdn/src/lib/apu.inc -q
+	@wget https://cdn.nesmaker.repl.co/cdn/src/lib/ppu.inc -q
+	@wget https://cdn.nesmaker.repl.co/cdn/src/lib/neschar.asm -q
+	@wget https://cdn.nesmaker.repl.co/cdn/src/lib/neshdr.asm -q
 	@mv ppu.inc src/lib/ppu.inc
 	@mv apu.inc src/lib/apu.inc
 	@mv main.asm src/main.asm
 	@mv neschar.asm src/lib/neschar.asm
 	@mv neshdr.asm src/lib/neshdr.asm
 	@echo Getting cc65 for this project
-	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/cc65?raw=true
-	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/ca65?raw=true
-	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/ld65?raw=true
-	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/cl65?raw=true
+	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/cc65?raw=true -q
+	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/ca65?raw=true -q
+	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/ld65?raw=true -q
+	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/cl65?raw=true -q
 	@mv cc65?raw=true tools/cc65
 	@mv ca65?raw=true tools/ca65
 	@mv ld65?raw=true tools/ld65
