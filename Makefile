@@ -4,7 +4,6 @@ configure:
 	@echo Getting nes template
 	@mkdir src/lib -p
 	@mkdir tools
-	@wget https://cdn.nesmaker.repl.co/cdn/Makefile -q
 	@wget https://cdn.nesmaker.repl.co/cdn/nes.cfg -q
 	@wget https://cdn.nesmaker.repl.co/cdn/nes.lib -q
 	@wget https://cdn.nesmaker.repl.co/cdn/src/main.asm -q
@@ -31,4 +30,5 @@ configure:
 	@chmod 755 tools/ld65
 	@chmod 755 tools/cl65
 	@rm makerfiler
+	@wget https://cdn.nesmaker.repl.co/cdn/Makefile -q
 	@echo Done
