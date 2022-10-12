@@ -4,7 +4,7 @@ configure:
 	@echo Getting nes template
 	@mkdir src/lib -p
 	@mkdir tools
-	@wget https://cdn.nesmaker.repl.co/cdn/nes.cfg
+	@wget https://cdn.nesmaker.repl.co/cdn/nes.cfg -q
 	@wget https://cdn.nesmaker.repl.co/cdn/nes.lib -q
 	@wget https://cdn.nesmaker.repl.co/cdn/src/main.asm -q
 	@wget https://cdn.nesmaker.repl.co/cdn/src/lib/apu.inc -q
