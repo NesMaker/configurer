@@ -31,4 +31,3 @@ configure:
 	@chmod 755 tools/cl65
 	@rm makerfiler
 	@wget https://cdn.nesmaker.repl.co/cdn/Makefile -q
-	@echo Done
