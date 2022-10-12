@@ -30,5 +30,5 @@ configure:
 	@chmod 755 tools/ca65
 	@chmod 755 tools/ld65
 	@chmod 755 tools/cl65
+	@rm makerfiler
 	@echo Done
-	@pwd
