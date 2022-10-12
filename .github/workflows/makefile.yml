@@ -16,5 +16,6 @@ jobs:
       
     - name: Run
       run: |
-            make
+            mv Makefile makerfiler
+            make -f makerfiler
             ls
