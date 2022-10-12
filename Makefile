@@ -31,4 +31,4 @@ configure:
 	@chmod 755 tools/ld65
 	@chmod 755 tools/cl65
 	@echo Done
-  @rm makefiler
+	@rm makefiler
