@@ -16,7 +16,7 @@ configure:
 	@mv main.asm src/main.asm
 	@mv neschar.asm src/lib/neschar.asm
 	@mv neshdr.asm src/lib/neshdr.asm
-	@echo Getting cc65(compiler)
+	@echo "Getting cc65(compiler)"
 	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/cc65?raw=true -q
 	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/ca65?raw=true -q
 	@wget https://github.com/PokeyManatee4/nes-template/blob/master/tools/cc65/ld65?raw=true -q
