@@ -1,0 +1,5 @@
+run = "cowsay Stuber"
+compile = "cowsay Stub"
+
+[nix]
+channel = "stable-21_11"
